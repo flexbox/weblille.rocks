@@ -54,8 +54,8 @@ configure :build do
     sitemap: data.settings.site.url+'/sitemap.xml'
 
   # Use this for github.io gh-pages
-  # activate :relative_assets
-  # set :relative_links, true
+  activate :relative_assets
+  set :relative_links, true
 end
 
 # Push-it to the web
