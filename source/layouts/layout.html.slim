@@ -8,6 +8,7 @@ html lang="#{data.settings.site.i18n}"
     = yield_content :head
 
   body class="#{page_classes}"
+    = partial 'views/hero'
 
     == yield
 
