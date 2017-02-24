@@ -1,7 +1,7 @@
 site:
   title: weblille.rocks
-  title_separator: •
-  description: 'La première communauté de partage au nord de Paris — Connecting amazing people working on da web'
+  title_separator: —
+  description: 'Rassembler les communautées de partage au Nord de Paris'
   i18n: fr
   geo:
     placename: 'Lille, Nord'
