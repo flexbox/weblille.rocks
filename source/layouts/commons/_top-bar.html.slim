@@ -1,0 +1,14 @@
+.top-bar
+  .top-bar-left
+    ul.dropdown.menu data-dropdown-menu=""
+      li.menu-text.top-bar--title
+        = data.settings.site.title
+
+  .top-bar-right
+    ul.menu
+      li
+        = data.settings.site.hastag
+      li
+        button type="button" class="button"
+          'Rejoindre
+          i.fa.fa-arrow-right

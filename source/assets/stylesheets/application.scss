@@ -5,3 +5,7 @@
 @import 'settings-custom';
 @import 'foundation-sites/scss/foundation';
 @include foundation-everything(true);
+
+@import 'atoms/button';
+
+@import 'molecules/top-bar';

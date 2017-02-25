@@ -2,14 +2,16 @@ doctype html
 
 html lang="#{data.settings.site.i18n}"
   head
-    = partial 'views/commons/meta_tags'
-    = partial 'views/commons/favicon'
-    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Roboto+Mono:500|Rubik+Mono+One'
+    = partial 'layouts/commons/meta_tags'
+    = partial 'layouts/commons/favicon'
     = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Roboto+Mono:500|Rubik+Mono+One'
+    = stylesheet_link_tag 'https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
     = yield_content :head
 
   body class="#{page_classes}"
-    = partial 'views/hero'
+    = partial 'layouts/commons/top-bar'
+    = partial 'layouts/hero'
 
     == yield
 

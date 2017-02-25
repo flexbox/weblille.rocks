@@ -5,3 +5,19 @@ $body-font-family: 'Roboto Mono', monospace;
 
 $header-font-family: 'Rubik Mono One', sans-serif;
 $header-font-weight: 400;
+
+$global-radius: 3px;
+
+
+
+// 11. Button
+// ----------
+
+$button-background-hover: scale-color($red, $lightness: 20%);
+
+
+
+// 37. Top Bar
+// -----------
+
+$topbar-padding: 1rem;

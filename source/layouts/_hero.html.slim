@@ -3,5 +3,7 @@
     .small-12.medium-6.columns
     .small-12.medium-6.columns
       = svg_tag 'svg/logo-weblille-rocks.svg'
-      p weblille.rocks est le premier réseau des personnes qui rocks on da web.
+      p
+        => data.settings.site.title
+        'est le premier réseau d’experts qui rocks on da web sur la métropole Lilloise.
       = link_to 'Demander une invitation', '#', class: 'button large'

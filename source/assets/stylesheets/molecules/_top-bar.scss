@@ -1,0 +1,14 @@
+.top-bar {
+  &--title {
+    text-transform: uppercase;
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+  }
+  ul {
+    @include breakpoint(small only){
+      justify-content: center;
+    }
+  }
+}
