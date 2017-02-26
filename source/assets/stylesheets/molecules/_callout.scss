@@ -1,7 +1,18 @@
 .callout {
+  &.success {
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.callout-picture {
   background-size: cover;
   min-height: 220px;
   position: relative;
+  border-radius: $global-radius;
+  overflow: hidden;
 
   * {
     position: relative;

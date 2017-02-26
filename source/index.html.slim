@@ -1,48 +1,68 @@
 ---
-title: Communauté web d'experts technologique à Lille
+title: Communauté d'experts en marketing et technologies web à Lille
 description: ''
 twitter_card_img: ''
 ---
 
-h3 Leaders
+section.section.light
+  .row.align-middle
+    .medium-2.columns
+      h5 style="margin-bottom: 0" Notre constat
+    .medium-5.columns
+      'De plus en plus de personnes travaillent dans l’industrie du web.
+    .medium-5.columns
+      'Il existe énorméments d’évènements, mais les communautés sont séparées.
 
-.row.align-center
-  .small-8.columns
-    h1 weblille.rocks
-    p = data.settings.site.description
-    = link_to 'Let’s get this party started', data.settings.site.url
+section.section.connecting
+  .row
+    .small-12.columns
+      h5 Notre mission
+      p
+        'Simplifier le partage d'informations
+        br
+        'en connectant les meilleurs talents
+        br
+        'aux plus beaux projets.
+      a class="typeform-share button secondary hollow" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
+        'Rejoindre la communauté
+
+section.section.large
+  .row.align-center
+    .small-8.columns.text-center
+      h1 weblille.rocks
+      p = data.settings.site.description
+      a class="typeform-share" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
+        'Let’s get this party started
+
+section.section.light
+  .row
+    .small-12.columns
+      markdown:
+        ## Meetups
+        Rencontrez des __groupes d’experts__ unis par un intérêt commun ou une technologie particulière. C’est __gratuit__ et la rencontre se finit par un bon moment au restaurant.
+        Technologie, startups & fab labs
+
+        Vous pouvez aussi consulter [le calendrier des évènements](http://lilletechhub.herokuapp.com/#!/calendrier)
 
 
+section.section
+  .row
+    .small-12.columns
 
-'mettre en commun
-'Connecting amazing people working on da web
+      h2 Places
+      p Euratechnologies
+      p La plaine image
 
-.row
-  .small-12.columns
-    markdown:
-      ## Meetups
-      Rencontrez des __groupes d’experts__ unis par un intérêt commun ou une technologie particulière. C’est __gratuit__ et la rencontre se finit par un bon moment au restaurant.
-      Technologie, startups & fab labs
-
-
-    end
-
-.row
-  .small-12.columns
-
-    h2 Places
-
-    h2 Coworkings
-    p Participez à l’économie collaborative. Rencontrez un réseau de travailleurs encourageant l’échange & l’ouverture.
-
-
-    .row
-      - data.coworking.each do |work|
-        .medium-4.columns
-          .callout style=" background-image: url(assets/images/places/#{work.picture}-photo.jpg)"
-            h3 = work.name
-            = work.website
-            = work.facebook
-            = work.twitter
-
-
+section.section
+  .row
+    .small-12.columns
+      h2 Coworkings
+      p Participez à l’économie collaborative. Rencontrez un réseau de travailleurs encourageant l’échange & l’ouverture.
+      .row
+        - data.coworking.each do |work|
+          .medium-4.columns
+            .callout.callout-picture style=" background-image: url(assets/images/places/#{work.picture}-photo.jpg)"
+              h3 = work.name
+              = work.website
+              = work.facebook
+              = work.twitter

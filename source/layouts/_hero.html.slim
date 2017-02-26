@@ -1,9 +1,26 @@
-.hero-banner
+.callout.success.text-center
+  p
+    '🎁 Les inscriptions sont
+    a>class="typeform-share" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank" gratuites
+    'jusque fin Mars
+
+section.section.hero-banner
   .row
     .small-12.medium-6.columns
+      .row.align-right
+        - data.leaders.each do |leader|
+          .columns.shrink.text-center
+            = image_tag gravatar_for(leader.email_gravatar), class: 'avatar'
+            br
+            = link_to leader.twitter, "https://twitter.com/intent/tweet?screen_name=#{leader.twitter}", class: 'avatar-link'
+        .columns.shrink.text-center
+          = image_tag lorem.image(100), class: 'avatar'
+          br
+          = link_to 'Vous', "https://github.com", class: 'avatar-link', target: '_blank'
     .small-12.medium-6.columns
       = svg_tag 'svg/logo-weblille-rocks.svg'
       p
         => data.settings.site.title
         'est le premier réseau d’experts qui rocks on da web sur la métropole Lilloise.
-      = link_to 'Demander une invitation', '#', class: 'button large'
+      a class="typeform-share button large" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
+        'Demander une invitation

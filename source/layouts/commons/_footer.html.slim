@@ -1,11 +1,26 @@
+section.section.people.xlarge
+  .row.align-center.text-center
+    .small-12.medium-8.columns
+      h3
+        'Toute la communauté tech
+        br
+        'Lilloise à un seul endroit
+      p
+        'Rejoingnez weblille.rocks, tenez vous au courant des évènements techs, devenez un expert et obtenez instantanément des réponses à vos questions.
+      = link_to 'Rejoignez-nous et faites péter le son', '', class: 'button secondary hollow large'
 
-'Join the social network for nomads, get your own trips map and message other travelers
 
-obtenez instantanément des conseils et tenez vous au courant des évènements techs
-p
-  'Rejoingnez weblille.rocks, devenez un expert et rencontrez 1000+ Digital Active
+section.section.light.large
+  .row.align-center.text-center
+    .small-12.medium-8.columns
+      h3 Contactez-nous
+      p N’hésitez pas à nous contacter pour nous faire part de vos commentaires sur notre communauté, nous donner des suggestions de nouvelles idées ou simplement dire bonjour !
+      = link_to 'Contactez-nous sur twitter', "https://twitter.com/intent/tweet?screen_name=#{data.settings.social.twitter}", class: 'button large'
 
-  = link_to 'Rencontrez des experts', '', class: 'button large'
-
-
-p 'Share the love on twitter #weblillerocks
+section.section.dark
+  .row.align-center.text-center
+    .small-12.medium-8.columns
+      p
+        'Share the love on twitter
+        = link_to "https://twitter.com/intent/tweet?text=http://weblille.rocks Connectez-vous avec des&hashtags=fondateurs,startups,designers,développeurs,recruteurs,freelance,weblille", target: '_blank' do
+          = data.settings.social.hashtag

@@ -12,4 +12,22 @@
       justify-content: center;
     }
   }
+  a {
+    color: $white;
+    font-weight: $global-weight-normal;
+  }
+  .button {
+    margin-left: 1rem;
+  }
+}
+
+.button.secondary.hollow {
+  color: $white;
+  border-color: $white;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    background-color: $white;
+
+  }
 }

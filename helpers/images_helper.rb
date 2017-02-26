@@ -1,6 +1,16 @@
 require 'lib/svg'
+require 'digest/md5'
 
-module SvgHelper
+module ImagesHelper
+  def fa(name)
+    return "<i class='fa fa-#{name}' aria-hidden='true'></i>"
+  end
+
+  def gravatar_for(email)
+    hash = Digest::MD5.hexdigest(email.chomp.downcase)
+    "http://www.gravatar.com/avatar/#{hash}?size=250"
+  end
+
   def svg_tag(filename, options={})
     root      = Middleman::Application.root
     file_path = File.join(root, 'source', config[:images_dir], filename)
@@ -9,7 +19,4 @@ module SvgHelper
     SVG.inline(file_path, options)
   end
 
-  def fa(name)
-    return "<i class='fa fa-#{name}' aria-hidden='true'></i>"
-  end
 end

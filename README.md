@@ -15,7 +15,6 @@
 ###### Preprocessing
 - [Slim](http://slim-lang.com) *[for html]*
 - [Sass](http://sass-lang.com) *[for css]*
-- [CoffeeScript](http://coffeescript.org) *[for js]*
 
 ###### Tools
 - [Bower](http://bower.io) *[js package management]*

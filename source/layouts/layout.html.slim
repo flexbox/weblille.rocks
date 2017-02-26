@@ -14,6 +14,12 @@ html lang="#{data.settings.site.i18n}"
     = partial 'layouts/hero'
 
     == yield
+    = partial 'layouts/commons/footer'
 
     = javascript_include_tag 'application'
+    javascript:
+      (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()
     = yield_content :javascripts
+
+
+

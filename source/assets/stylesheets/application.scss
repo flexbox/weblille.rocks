@@ -6,7 +6,9 @@
 @import 'foundation-sites/scss/foundation';
 @include foundation-everything(true);
 
+@import 'atoms/avatar';
 @import 'atoms/button';
 
 @import 'molecules/top-bar';
 @import 'molecules/callout';
+@import 'molecules/section';

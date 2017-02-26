@@ -1,0 +1,34 @@
+@mixin section-size($padding){
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+.section {
+  @include section-size(3rem);
+  &.large {
+    @include section-size(9rem);
+  }
+  &.xlarge {
+    @include section-size(12rem);
+  }
+  &.light {
+    background-color: $white-pure;
+  }
+  &.dark {
+    background-color: $black;
+    color: $white;
+  }
+  &.connecting {
+    background-image: image-url('weblille-connecting-people.jpg');
+    background-size: cover;
+    min-height: 40rem;
+    background-position: center center;
+    color: $white;
+  }
+  &.people {
+    background-image: image-url('weblille-people.jpg');
+    background-size: cover;
+    background-position: top center;
+    color: $white;
+  }
+}

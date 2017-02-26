@@ -7,8 +7,12 @@
   .top-bar-right
     ul.menu
       li
-        = data.settings.site.hastag
+        = link_to "https://twitter.com/intent/tweet?text=http://weblille.rocks Connectez-vous avec des&hashtags=fondateurs,startups,designers,développeurs,recruteurs,freelance,weblille", target: '_blank' do
+          = data.settings.social.hashtag
       li
-        = link_to data.settings.social.typeform_url, class: 'button' do
+        = link_to data.settings.social.slack_url, class: 'button secondary hollow' do
+          'Déjà membre ?
+      li
+        a class="typeform-share button" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
           'Rejoindre
           = fa('arrow-right fa-fw')
