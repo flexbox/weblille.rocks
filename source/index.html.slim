@@ -1,13 +1,48 @@
 ---
-title: Communauté web d’experts technologique pour travailler à Lille
+title: Communauté web d'experts technologique à Lille
 description: ''
 twitter_card_img: ''
 ---
+
+h3 Leaders
 
 .row.align-center
   .small-8.columns
     h1 weblille.rocks
     p = data.settings.site.description
-    = link_to 'Get started', data.settings.site.url
+    = link_to 'Let’s get this party started', data.settings.site.url
 
-'Les meilleurs personnes qui Connecting amazing people working on da web
+
+
+'mettre en commun
+'Connecting amazing people working on da web
+
+.row
+  .small-12.columns
+    markdown:
+      ## Meetups
+      Rencontrez des __groupes d’experts__ unis par un intérêt commun ou une technologie particulière. C’est __gratuit__ et la rencontre se finit par un bon moment au restaurant.
+      Technologie, startups & fab labs
+
+
+    end
+
+.row
+  .small-12.columns
+
+    h2 Places
+
+    h2 Coworkings
+    p Participez à l’économie collaborative. Rencontrez un réseau de travailleurs encourageant l’échange & l’ouverture.
+
+
+    .row
+      - data.coworking.each do |work|
+        .medium-4.columns
+          .callout style=" background-image: url(assets/images/places/#{work.picture}-photo.jpg)"
+            h3 = work.name
+            = work.website
+            = work.facebook
+            = work.twitter
+
+

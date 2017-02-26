@@ -14,6 +14,13 @@ $global-radius: 3px;
 // ----------
 
 $button-background-hover: scale-color($red, $lightness: 20%);
+$callout-font-color: $white;
+
+
+// 13. Callout
+// ----------
+
+$callout-border: none;
 
 
 
@@ -21,3 +28,4 @@ $button-background-hover: scale-color($red, $lightness: 20%);
 // -----------
 
 $topbar-padding: 1rem;
+$topbar-background: $black;

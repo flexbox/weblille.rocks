@@ -8,4 +8,8 @@ module SvgHelper
 
     SVG.inline(file_path, options)
   end
+
+  def fa(name)
+    return "<i class='fa fa-#{name}' aria-hidden='true'></i>"
+  end
 end

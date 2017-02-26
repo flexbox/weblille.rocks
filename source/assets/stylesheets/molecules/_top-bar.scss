@@ -5,6 +5,7 @@
     font-weight: $header-font-weight;
     letter-spacing: -1px;
     font-size: 1.5rem;
+    color: $white;
   }
   ul {
     @include breakpoint(small only){

@@ -9,6 +9,6 @@
       li
         = data.settings.site.hastag
       li
-        button type="button" class="button"
+        = link_to data.settings.social.typeform_url, class: 'button' do
           'Rejoindre
-          i.fa.fa-arrow-right
+          = fa('arrow-right fa-fw')
