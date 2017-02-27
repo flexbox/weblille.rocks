@@ -9,10 +9,19 @@
 
 .callout-picture {
   background-size: cover;
-  min-height: 220px;
   position: relative;
   border-radius: $global-radius;
   overflow: hidden;
+  min-height: 220px;
+  &.large {
+    min-height: 320px;
+  }
+  a {
+    @include link-hover($white, $white-pure);
+    padding-right: 1rem;
+    float: left;
+    display: none;
+  }
 
   * {
     position: relative;
@@ -27,5 +36,17 @@
     right: 0;
     background-color: rgba($black, 0.5);
     content: '';
+  }
+
+  .title {
+    display: block;
+  }
+  &:hover {
+    a {
+      display: block;
+    }
+    .title {
+      display: none;
+    }
   }
 }

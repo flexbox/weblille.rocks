@@ -6,11 +6,11 @@ twitter_card_img: ''
 
 section.section.light
   .row.align-middle
-    .medium-2.columns
+    .small-12.medium-2.columns
       h5 style="margin-bottom: 0" Notre constat
-    .medium-5.columns
+    .small-12.medium-5.columns
       'De plus en plus de personnes travaillent dans l’industrie du web.
-    .medium-5.columns
+    .small-12.medium-5.columns
       'Il existe énorméments d’évènements, mais les communautés sont séparées.
 
 section.section.connecting
@@ -18,7 +18,7 @@ section.section.connecting
     .small-12.columns
       h5 Notre mission
       p
-        'Simplifier le partage d'informations
+        'Simplifier le partage d’informations
         br
         'en connectant les meilleurs talents
         br
@@ -29,8 +29,9 @@ section.section.connecting
 section.section.large
   .row.align-center
     .small-8.columns.text-center
-      h1 weblille.rocks
-      p = data.settings.site.description
+      markdown:
+        # weblille.rocks
+        Nous connectons des __personnes étonnantes faisant des choses extraordinaires__ aux organisateurs d’événements cherchant à amener leur contenu au niveau suivant.
       a class="typeform-share" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
         'Let’s get this party started
 
@@ -40,7 +41,7 @@ section.section.light
       markdown:
         ## Meetups
         Rencontrez des __groupes d’experts__ unis par un intérêt commun ou une technologie particulière. C’est __gratuit__ et la rencontre se finit par un bon moment au restaurant.
-        Technologie, startups & fab labs
+        Technologie, startups & fab labs.
 
         Vous pouvez aussi consulter [le calendrier des évènements](http://lilletechhub.herokuapp.com/#!/calendrier)
 
@@ -48,10 +49,20 @@ section.section.light
 section.section
   .row
     .small-12.columns
-
-      h2 Places
-      p Euratechnologies
-      p La plaine image
+      markdown:
+        ## Places
+        Partager vos expériences en organisant simplement et rapidement un __/lunch__ entre travailleurs du web.
+      .row
+        - data.places.each do |place|
+          .medium-6.columns
+            .callout.callout-picture.large style="background-image: url(assets/images/places/#{place.picture}.jpg);"
+              h3.title = place.name
+              = link_to place.website, class: '', target: '_blank' do
+                = fa 'fa-globe fa-3x'
+              = link_to place.facebook, class: '', target: '_blank' do
+                = fa 'fa-facebook-square fa-3x'
+              = link_to place.twitter, class: '', target: '_blank' do
+                = fa 'fa-twitter-square fa-3x'
 
 section.section
   .row
@@ -61,8 +72,11 @@ section.section
       .row
         - data.coworking.each do |work|
           .medium-4.columns
-            .callout.callout-picture style=" background-image: url(assets/images/places/#{work.picture}-photo.jpg)"
-              h3 = work.name
-              = work.website
-              = work.facebook
-              = work.twitter
+            .callout.callout-picture style="background-image: url(assets/images/places/#{work.picture}-photo.jpg);"
+              h3.title = work.name
+              = link_to work.website, class: '', target: '_blank' do
+                = fa 'fa-globe fa-3x'
+              = link_to work.facebook, class: '', target: '_blank' do
+                = fa 'fa-facebook-square fa-3x'
+              = link_to work.twitter, class: '', target: '_blank' do
+                = fa 'fa-twitter-square fa-3x'

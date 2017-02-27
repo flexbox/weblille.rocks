@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>logo</title>
-    <desc>Created with Sketch.</desc>
+    <title>#weblille - Rassembler les communautés web au Nord de Paris</title>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="noun_60230_cc" transform="translate(26.000000, 9.000000)" fill-rule="nonzero" fill="#000000">
+    <g stroke="none" stroke-width="1">
+        <g id="noun_60230_cc" transform="translate(26.000000, 9.000000)" fill-rule="nonzero">
             <path d="M48.0909091,40.1356164 L27.0681818,34.109589 L43.5454545,0.568493151 L0.0227272727,43.7739726 L21.1590909,49.8 L8.31818182,82.7726027 L48.0909091,40.1356164 Z M3.77272727,42.8643836 L36.6136364,10.2328767 L24.2272727,35.360274 L44.3409091,41.0452055 L14,73.9041096 L23.8863636,48.5493151 L3.77272727,42.8643836 Z" id="Shape"></path>
         </g>
     </g>

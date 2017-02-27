@@ -1,12 +1,12 @@
 .top-bar
   .top-bar-left
-    ul.dropdown.menu data-dropdown-menu=""
+    ul.dropdown.menu
       li.menu-text.top-bar--title
         = data.settings.site.title
 
   .top-bar-right
     ul.menu
-      li
+      li.hide-for-small-only
         = link_to "https://twitter.com/intent/tweet?text=http://weblille.rocks Connectez-vous avec des&hashtags=fondateurs,startups,designers,développeurs,recruteurs,freelance,weblille", target: '_blank' do
           = data.settings.social.hashtag
       li
@@ -15,4 +15,4 @@
       li
         a class="typeform-share button" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
           'Rejoindre
-          = fa('arrow-right fa-fw')
+          = fa 'fa-arrow-right fa-fw'

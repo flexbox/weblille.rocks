@@ -1,3 +1,10 @@
+@mixin link-hover($color, $hover){
+  color: $color;
+  &:hover {
+    color: $hover;
+  }
+}
+
 $white-pure: #ffffff;
 $white: #f4f4f4;
 $black: #020103;
@@ -15,3 +22,4 @@ $foundation-palette: (
 );
 
 $body-background: $white;
+

@@ -3,7 +3,7 @@ require 'digest/md5'
 
 module ImagesHelper
   def fa(name)
-    return "<i class='fa fa-#{name}' aria-hidden='true'></i>"
+    return "<i class='fa #{name}' aria-hidden='true'></i>"
   end
 
   def gravatar_for(email)

@@ -1,4 +1,4 @@
-section.section.hero-banner
+section.section.large.hero-banner
   .row
     .small-12.medium-6.columns
       .row.align-right
@@ -12,9 +12,9 @@ section.section.hero-banner
           br
           = link_to 'Vous', "https://github.com", class: 'avatar-link', target: '_blank'
     .small-12.medium-6.columns
-      = svg_tag 'svg/logo-weblille-rocks.svg'
       p
         => data.settings.site.title
-        'est le premier réseau d’experts qui rocks on da web sur la métropole Lilloise.
+        'est le premier réseau de personnes qui rocks on da web sur la métropole Lilloise.
+        'Nous <strong>rassemblons les meilleures communautés web</strong> au Nord de Paris.
       a class="typeform-share button large" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
         'Demander une invitation
