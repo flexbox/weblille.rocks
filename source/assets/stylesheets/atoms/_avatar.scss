@@ -2,6 +2,13 @@
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
+  &.large {
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid $body-background;
+    margin-top: -80px;
+  }
+
   &-link {
     font-size: 0.75rem;
   }

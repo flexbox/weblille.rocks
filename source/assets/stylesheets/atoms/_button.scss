@@ -2,3 +2,22 @@
   font-family: $body-font-family;
   font-weight: $global-weight-normal;
 }
+
+.button.secondary.hollow {
+  color: $white;
+  border-color: $white;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    background-color: $white;
+  }
+  &.dark {
+    color: $black;
+    border-color: $black;
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $black;
+    }
+  }
+}

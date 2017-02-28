@@ -12,6 +12,11 @@ page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
 
+# Dynamic pages
+data.leaders.each do |leader|
+  proxy "/#{leader.slug}.html", "/templates/leader.html", :locals => { :leader => leader }, :ignore => true
+end
+
 # Add bower's directory to sprockets asset path
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))

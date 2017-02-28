@@ -1,5 +1,6 @@
 -
   fullname: David Leuliette
+  slug: flexbox
   twitter: _flexbox
   github: flexbox
   linkedin_url: https://www.linkedin.com/in/david-leuliette-456701121/
@@ -10,6 +11,7 @@
     - url: https://www.meetup.com/fr-FR/WelshDesign/
 -
   fullname: Adrien Gillon
+  slug: baDotNet
   twitter: baDotNet
   github:
   linkedin_url: https://www.linkedin.com/in/adrien-gillon-71808670/

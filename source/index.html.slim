@@ -4,6 +4,8 @@ description: ''
 twitter_card_img: ''
 ---
 
+= partial 'layouts/hero'
+
 section.section.light
   .row.align-middle
     .small-12.medium-2.columns
@@ -74,9 +76,27 @@ section.section
           .medium-4.columns
             .callout.callout-picture style="background-image: url(assets/images/places/#{work.picture}-photo.jpg);"
               h3.title = work.name
-              = link_to work.website, class: '', target: '_blank' do
+              = link_to work.website, target: '_blank' do
                 = fa 'fa-globe fa-3x'
-              = link_to work.facebook, class: '', target: '_blank' do
+              = link_to work.facebook, target: '_blank' do
                 = fa 'fa-facebook-square fa-3x'
-              = link_to work.twitter, class: '', target: '_blank' do
+              = link_to work.twitter, target: '_blank' do
                 = fa 'fa-twitter-square fa-3x'
+
+section.section.people.xlarge
+  .row.align-center.text-center
+    .small-12.medium-8.columns
+      h3
+        'Toute la communauté tech
+        br
+        'Lilloise à un seul endroit
+      p
+        'Rejoingnez weblille.rocks, tenez vous au courant des évènements techs, devenez un expert et obtenez instantanément des réponses à vos questions.
+      = link_to 'Rejoignez-nous et faites péter le son', '', class: 'button secondary hollow large'
+
+section.section.light.large
+  .row.align-center.text-center
+    .small-12.medium-8.columns
+      h3 Contactez-nous
+      p N’hésitez pas à nous contacter pour nous faire part de vos commentaires sur notre communauté, nous donner des suggestions de nouvelles idées ou simplement dire bonjour !
+      = link_to 'Contactez-nous sur twitter', "https://twitter.com/intent/tweet?screen_name=#{data.settings.social.twitter}", class: 'button large'
