@@ -4,9 +4,10 @@ section.section.large.hero-banner
       .row.align-right
         - data.leaders.each do |leader|
           .columns.shrink.text-center
-            = image_tag gravatar_for(leader.email_gravatar), class: 'avatar'
+            = link_to leader.slug do
+              = image_tag gravatar_for(leader.email_gravatar), class: 'avatar'
             br
-            = link_to leader.twitter, "https://twitter.com/intent/tweet?screen_name=#{leader.twitter}", class: 'avatar-link'
+            = link_to leader.slug, leader.slug, class: 'avatar-link'
         .columns.shrink.text-center
           = image_tag lorem.image(100), class: 'avatar'
           br

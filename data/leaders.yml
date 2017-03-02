@@ -18,3 +18,16 @@
   email_gravatar: adrien@bacto.net
   meetups:
     - url: https://www.meetup.com/fr-FR/FranceJS/
+-
+  fullname: Luc Vanwaelscappel
+  slug: lebayou
+  twitter: luc_vanw
+  linkedin_url: https://www.linkedin.com/in/adrien-gillon-71808670/
+  email_gravatar: lebayou@gmail.com
+-
+  fullname: Maud Remoriquet
+  slug: mihani
+  twitter: mihani_dev
+  github: Mihani
+  linkedin_url: https://www.linkedin.com/in/maudremoriquet/
+  email_gravatar: maud.remoriquet@gmail.com
