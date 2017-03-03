@@ -8,7 +8,7 @@ site:
     position: 50.629250;3.057256
     region: FR-59
   url: 'http://weblille.rocks'
-  twitter_card_img: ''
+  twitter_card_img: 'https://github.com/flexbox/weblille.rocks/blob/master/source/assets/images/twitter-card.jpg?raw=true'
   author: David Leuliette
 
 social:
