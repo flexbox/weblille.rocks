@@ -1,8 +1,19 @@
 .leader {
-  border-top: 250px solid $black;
+  border-top: 100px solid $black;
+  @include breakpoint(medium) {
+    border-top: 250px solid $black;
+  }
   .menu {
     li {
       margin: 1rem;
+    }
+  }
+
+  &--social-links {
+    a {
+      @include link-hover(rgba($black, 0.6), $black);
+      display: inline-flex;
+      padding: 0.4rem;
     }
   }
 }
