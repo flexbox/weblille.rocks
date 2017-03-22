@@ -27,7 +27,7 @@ section.section.connecting
       a class="typeform-share button secondary hollow" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
         'Rejoindre la communauté
 
-section.section.large
+section.section.large.light
   .row.align-center
     .small-8.columns.text-center
       markdown:
@@ -37,7 +37,7 @@ section.section.large
         '🤘
         'Let’s get this party started
 
-section.section.light
+section.section
   .row
     .small-12.columns
       markdown:
@@ -45,6 +45,20 @@ section.section.light
         Rencontrez des __groupes d’experts__ unis par un intérêt commun ou une technologie particulière. C’est __gratuit__ et la rencontre se finit par un bon moment au restaurant.
         Technologie, startups & fab labs.
 
+      .row.small-up-1.medium-up-2.large-up-3
+        - data.meetups.each do |meetup|
+          .columns
+            .callout style="min-height: 160px;"
+              p
+                strong
+                  => link_to meetup.name, meetup.url
+                br
+                = meetup.baseline
+                br
+                span.text-light = fa 'fa-map-marker fa-fw'
+                = meetup.place
+
+      markdown:
         Vous pouvez aussi consulter [le calendrier des évènements](http://lilletechhub.herokuapp.com/#!/calendrier)
 
 
@@ -69,8 +83,9 @@ section.section
 section.section
   .row
     .small-12.columns
-      h2 Coworkings
-      p Participez à l’économie collaborative. Rencontrez un réseau de travailleurs __encourageant l’échange & l’ouverture__.
+      markdown:
+        ## Coworkings
+        Participez à l’économie collaborative. Rencontrez un réseau de travailleurs __encourageant l’échange & l’ouverture__.
       .row
         - data.coworking.each do |work|
           .medium-4.columns
