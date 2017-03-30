@@ -10,12 +10,6 @@ html lang="#{data.settings.site.i18n}"
     = yield_content :head
 
   body class="#{page_classes}"
-    .callout.success.text-center style="margin-bottom: 0"
-      p
-        '🎁 Les inscriptions sont
-        a>class="typeform-share" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank" ouvertes
-        'jusque fin Mars
-
     = partial 'layouts/commons/top-bar'
     == yield
 

@@ -2,9 +2,12 @@
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
-  opacity: 0.6;
-  &:hover {
-    opacity: 1;
+
+  &.small {
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &.large {
