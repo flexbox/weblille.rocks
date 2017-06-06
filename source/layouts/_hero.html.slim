@@ -1,18 +1,11 @@
 section.section.large.hero-banner
-  .row
+  .row.expanded
     .small-12.medium-6.columns
-      .row.align-right
-        - data.leaders.each do |leader|
-          .columns.shrink.text-center
-            = link_to leader.slug do
-              = image_tag gravatar_for(leader.email_gravatar), class: 'avatar small'
-            br
-            = link_to leader.slug, leader.slug, class: 'avatar-link'
-        .columns.shrink.text-center
-          = link_to 'https://github.com/flexbox/weblille.rocks/blob/master/data/leaders.yml' do
-            = image_tag lorem.image(100), class: 'avatar small'
-          br
-          = link_to 'Vous', "https://github.com/flexbox/weblille.rocks/blob/master/data/leaders.yml", class: 'avatar-link', target: '_blank'
+      .row.align-right.small-up-10
+        - data.rockstars.responses.each do |rockstar|
+          - if rockstar.completed == '1'
+            .columns.shrink.text-center
+              = image_tag gravatar_for(rockstar.answers.email_44336307), class: 'avatar small', title: rockstar.answers.textfield_44336227
     .small-12.medium-6.columns
       p
         => data.settings.site.title

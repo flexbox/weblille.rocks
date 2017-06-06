@@ -4,6 +4,13 @@ activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 activate :livereload
 activate :directory_indexes
 
+activate :data_source do |c|
+  c.root  = 'https://api.typeform.com/v1/form/JFjFWI?key=5e51d8be3d2cd649b3064ee34fabe2e8cd18d8cd&completed=true'
+  c.files = [
+    'rockstars.json'
+  ]
+end
+
 set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'

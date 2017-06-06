@@ -12,5 +12,8 @@ gem 'middleman-robots',        '~> 1.1.0'
 gem 'middleman-sitemap',       '~> 0.0.13'
 gem 'middleman-sitemap-ping',  '~> 0.0.2'
 
+# datas for rockstars homepage
+gem 'middleman-data_source'
+
 gem 'slim',                    '~> 3.0.2'
 gem 'oga',                     '~> 2.8'
