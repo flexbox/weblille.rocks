@@ -1,12 +1,13 @@
 # weblille.rocks
 
-> Community website
+> Community website and Slack channel for awesome people working on the web
 
 ## Datas
 
-Update slug at `data/leaders.yml`
+- Update slug at [data/leaders.yml](data/leaders.yml)
+- Update conferences talks at [data/call-for-papers.json](data/call-for-papers.json)
 
-## Getting started 
+## Getting started
 
 Look the [codeless README](https://github.com/flexbox/codeless)
 

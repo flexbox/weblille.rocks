@@ -1,0 +1,39 @@
+---
+title: Donner une conférence sur les technologies web à Lille
+description: ''
+---
+
+section.section.light
+  .row.align-middle
+    .small-12.medium-2.columns
+      h5 style="margin-bottom: 0" Notre constat
+    .small-12.medium-5.columns
+      'De plus en plus de personnes travaillent dans l’industrie du web.
+    .small-12.medium-5.columns
+      'Il existe énorméments d’évènements, mais les communautés sont séparées.
+
+section.section
+  .row.align-middle
+    .small-12.columns
+      h1 Partager vos connaissances
+      p Vous souhaitez donner un talk sur le test d'un nouvel outil ou d'une nouvelle techno, un retour d'expérience…
+      .row.small-up-1.medium-up-2.large-up-3
+        - data.call_for_papers.each do |talk|
+          .columns
+            .callout style="min-height: 160px;"
+              h2 = talk.name
+              p = talk.description
+              = link_to 'Je suis speacker', talk.url, class: 'button'
+
+section.section.connecting
+  .row
+    .small-12.columns
+      h5 Notre mission
+      p
+        'Connecter les talents et simplifier
+        br
+        'le partage d’informations
+        br
+        'entre les communautés web.
+      a class="typeform-share button secondary hollow" href="#{data.settings.social.typeform_url}" data-mode="1" target="_blank"
+        'Rejoindre la communauté
