@@ -5,7 +5,7 @@
 ## Datas
 
 - Update slug at [data/leaders.yml](data/leaders.yml)
-- Update conferences talks at [data/call-for-papers.json](data/call-for-papers.json)
+- Update conferences talks at [data/call-for-papers.json](data/call_for_papers.json)
 
 ## Getting started
 
