@@ -4,6 +4,12 @@
     <loc>http://weblille.rocks/mihani</loc>
   </url>
   <url>
+    <loc>http://weblille.rocks/talks</loc>
+  </url>
+  <url>
+    <loc>http://weblille.rocks</loc>
+  </url>
+  <url>
     <loc>http://weblille.rocks/flexbox</loc>
   </url>
   <url>
@@ -13,12 +19,6 @@
     <loc>http://weblille.rocks/lebayou</loc>
   </url>
   <url>
-    <loc>http://weblille.rocks</loc>
-  </url>
-  <url>
     <loc>http://weblille.rocks/lunch</loc>
-  </url>
-  <url>
-    <loc>http://weblille.rocks/talks</loc>
   </url>
 </urlset>
