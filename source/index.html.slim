@@ -58,9 +58,6 @@ section.section
                 span.text-light = fa 'fa-map-marker fa-fw'
                 = meetup.place
 
-      markdown:
-        Vous pouvez aussi consulter [le calendrier des évènements](http://lilletechhub.herokuapp.com/#!/calendrier)
-
 
 section.section
   .row
@@ -113,6 +110,6 @@ section.section.people.xlarge
 section.section.light.large
   .row.align-center.text-center
     .small-12.medium-8.columns
-      h3 Contactez-nous
-      p N’hésitez pas à nous contacter pour nous faire part de vos commentaires sur notre communauté, nous donner des suggestions de nouvelles idées ou simplement dire bonjour !
-      = link_to 'Contactez-nous sur twitter', "https://twitter.com/intent/tweet?screen_name=#{data.settings.social.twitter}", class: 'button large'
+      h3 Fièrement sponsorizé par
+      = link_to 'https://zapier.com/', target: '_blank' do
+        = svg_tag 'svg/zapier-logo.svg'
