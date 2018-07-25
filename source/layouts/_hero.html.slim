@@ -2,7 +2,7 @@ section.section.large.hero-banner
   .row.expanded
     .small-12.medium-6.columns
       .row.align-right.small-up-10
-        - data.rockstars.responses.first(130).each do |rockstar|
+        - data.rockstars.responses.first(45).each do |rockstar|
           - if rockstar.completed == '1'
             .columns.shrink.text-center
               = image_tag gravatar_for(rockstar.answers.email_44336307), class: 'avatar small', title: rockstar.answers.textfield_44336227

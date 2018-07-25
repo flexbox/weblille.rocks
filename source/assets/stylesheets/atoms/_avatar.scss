@@ -2,6 +2,8 @@
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
+  background-color: rgba($black, 0.1);
+  margin-bottom: 1rem;
 
   &.small {
     opacity: 0.6;
