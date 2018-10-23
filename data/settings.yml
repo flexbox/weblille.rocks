@@ -1,7 +1,7 @@
 site:
   title: weblille.rocks
   title_separator: —
-  description: 'Rassembler les meilleures communautés web au Nord de Paris'
+  description: 'Rassembler les meilleures communautés web des Hauts de France'
   i18n: fr
   geo:
     placename: 'Lille, Nord'
